@@ -21,7 +21,7 @@ app.use("/api", userRoutes);
 // Setup Swagger
 setupSwagger(app);
 
-const PORT = process.env.PORT || 5000 || process.env.MYSQLPORT;
+const PORT = process.env.PORT || 5000 ;
 
 app.listen(PORT, async () => {
   await sequelize.sync();
